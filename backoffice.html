@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bodia Backoffice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/logo.jpeg" alt="Bodia" class="brand-logo" />
+        <div>
+          <p class="brand-kicker">Bodia</p>
+          <h1>Backoffice</h1>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Navegación del backoffice">
+        <a href="/backoffice" class="sidebar-link is-active">Leads</a>
+      </nav>
+    </aside>
+
+    <main class="main-panel">
+      <section class="dashboard">
+        <header class="dashboard-topbar">
+          <div>
+            <span class="pill pill-dark">Bodia Backoffice</span>
+            <h2>Leads Dashboard</h2>
+          </div>
+          <div class="topbar-actions">
+            <a class="btn btn-muted" href="/api/admin/leads/export-excel">Exportar Excel</a>
+            <a class="btn btn-muted" href="/api/admin/leads/export">Exportar CSV</a>
+            <button type="button" class="btn btn-dark" id="logoutBtn">Cerrar sesión</button>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="stat-card">
+            <span>Total</span>
+            <strong id="statTotal">0</strong>
+          </article>
+          <article class="stat-card">
+            <span>Nuevos</span>
+            <strong id="statNew">0</strong>
+          </article>
+          <article class="stat-card">
+            <span>Contactados</span>
+            <strong id="statContacted">0</strong>
+          </article>
+          <article class="stat-card">
+            <span>Calificados</span>
+            <strong id="statQualified">0</strong>
+          </article>
+        </section>
+
+        <section class="toolbar">
+          <input type="search" id="searchInput" placeholder="Buscar por correo o fuente" />
+          <select id="statusFilter">
+            <option value="all">Todos los estados</option>
+            <option value="new">Nuevos</option>
+            <option value="contacted">Contactados</option>
+            <option value="qualified">Calificados</option>
+          </select>
+        </section>
+
+        <section class="table-card">
+          <div class="table-head">
+            <h3>Leads registrados</h3>
+            <p id="tableMeta">0 resultados</p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Correo</th>
+                  <th>Fecha</th>
+                  <th>Fuente</th>
+                  <th>Estado</th>
+                  <th>Observaciones</th>
+                  <th>Notas</th>
+                  <th>Guardar</th>
+                  <th>Eliminar</th>
+                </tr>
+              </thead>
+              <tbody id="leadsTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="backoffice.js"></script>
+</body>
+</html>

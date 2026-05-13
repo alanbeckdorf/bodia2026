@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#ffffff" />
+<title>Bodia | Descarga Hoy</title>
+<meta name="description" content="Bodia es el primer entrenador con IA que escanea tu cuerpo, adapta tu rutina y te guía en cada repetición. Próximamente en App Store y Google Play." />
+<meta property="og:title" content="Bodia - Tu coach personal con IA" />
+<meta property="og:description" content="Escanea tu cuerpo, recibe tu plan, entrena con claridad. Próximamente en iOS y Android." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand" aria-label="Bodia inicio">
+      <img src="assets/logo.jpeg" alt="Bodia" class="brand-logo" />
+      <span class="brand-name">Bodia</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#features">La app</a>
+      <a href="#how">Cómo funciona</a>
+      <a href="#movimiento">Movimiento</a>
+      <a href="#team">Equipo</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <a href="#cta" class="btn btn-primary btn-sm">Únete</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow">
+        <span class="dot"></span>
+        Tu cuerpo · Tu progreso
+      </span>
+      <h1 class="h1">
+        Conoce Bodia <br />
+        Fitness simple <br />
+        <span class="h1-line">para <span class="grad">verte mejor</span></span>
+      </h1>
+      <p class="hero-sub">
+        Desliza máquinas estilo Tinder, descansa con propósito y escanea tu cuerpo
+        con inteligencia artificial. Así de simple.
+      </p>
+
+      <form class="email-form" data-form="hero" novalidate>
+        <input type="email" name="email" placeholder="tu@email.com" required aria-label="Correo electrónico" />
+        <button type="submit" class="btn btn-primary">Quiero ser parte</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="stores">
+        <span class="store-badge" aria-label="Próximamente en App Store">
+          <img src="assets/badge-appstore.png" alt="Disponible en el App Store" />
+        </span>
+        <span class="store-badge" aria-label="Próximamente en Google Play">
+          <img src="assets/badge-googleplay.png" alt="Disponible en Google Play" />
+        </span>
+      </div>
+
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <img src="assets/hero-mockup.png" alt="" class="hero-image" />
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="float-card card-1">
+        <span class="dot dot-green"></span>
+        <div><strong>+2.3% músculo</strong><small>vs. tu último escaneo</small></div>
+      </div>
+      <div class="float-card card-2">
+        <span class="dot dot-orange"></span>
+        <div><strong>14% grasa</strong><small>Análisis corporal IA</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MARQUEE ========== -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span class="m-item">Entrena con inteligencia</span>
+      <span class="m-item">Tu cuerpo entendido</span>
+      <span class="m-item">Rutinas que se adaptan</span>
+      <span class="m-item">Pausas que motivan</span>
+      <span class="m-item">Progreso real</span>
+    </div>
+    <div class="marquee-group">
+      <span class="m-item">Entrena con inteligencia</span>
+      <span class="m-item">Tu cuerpo entendido</span>
+      <span class="m-item">Rutinas que se adaptan</span>
+      <span class="m-item">Pausas que motivan</span>
+      <span class="m-item">Progreso real</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEATURES ========== -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-head reveal reveal-title">
+      <h2 class="h2">¿Qué incluye Bodia?</h2>
+    </div>
+
+    <div class="features-layout">
+      <div class="features-phone reveal reveal-phone">
+        <img src="assets/mockup-exercise.png" alt="Bodia" class="features-phone-img" id="featurePhone" />
+        <div class="features-dots" id="featureDots" role="tablist" aria-label="Cambiar vista">
+          <button type="button" class="features-dot is-active" data-index="0" aria-label="Vista 1"></button>
+          <button type="button" class="features-dot" data-index="1" aria-label="Vista 2"></button>
+          <button type="button" class="features-dot" data-index="2" aria-label="Vista 3"></button>
+          <button type="button" class="features-dot" data-index="3" aria-label="Vista 4"></button>
+          <button type="button" class="features-dot" data-index="4" aria-label="Vista 5"></button>
+        </div>
+      </div>
+
+      <div class="features-list">
+        <button type="button" class="feat-card reveal-feat is-open" data-img="assets/mockup-exercise.png" aria-expanded="true">
+          <div class="feat-head">
+            <h3>Desliza máquinas como si fuera Tinder.</h3>
+          </div>
+          <div class="feat-body">
+            <p>Derecha si te gusta. Izquierda si la máquina está ocupada o no quieres ese ejercicio. Abajo si no la tienes y no quieres verla nunca más. Tu rutina, tus reglas.</p>
+          </div>
+        </button>
+
+        <button type="button" class="feat-card reveal-feat" data-img="assets/mockup-technique.png" aria-expanded="false">
+          <div class="feat-head">
+            <h3>Tempo claro en cada repetición.</h3>
+          </div>
+          <div class="feat-body">
+            <p>Extiende, mantén, contrae, mantén. Video corto y cadencia exacta para que cada serie cuente de verdad. Sin adivinar, sin perder tiempo.</p>
+          </div>
+        </button>
+
+        <button type="button" class="feat-card reveal-feat" data-img="assets/mockup-progress.png" aria-expanded="false">
+          <div class="feat-head">
+            <h3>Mira tu transformación, mes a mes.</h3>
+          </div>
+          <div class="feat-body">
+            <p>Fotos del antes y el después junto a tu curva de evolución. Bodia te muestra cómo cambia tu cuerpo de verdad, en imagen y en datos, para que veas el resultado, no solo lo imagines.</p>
+          </div>
+        </button>
+
+        <button type="button" class="feat-card reveal-feat" data-img="assets/mockup-rest.png" aria-expanded="false">
+          <div class="feat-head">
+            <h3>Pausas activas que te dan algo de vuelta.</h3>
+          </div>
+          <div class="feat-body">
+            <p>Frases que motivan, consejos de nutrición y respiración entre series. El descanso también construye resultados.</p>
+          </div>
+        </button>
+
+        <button type="button" class="feat-card reveal-feat" data-img="assets/mockup-summary.png" aria-expanded="false">
+          <div class="feat-head">
+            <h3>Mide lo que importa. Celebra cada sesión.</h3>
+          </div>
+          <div class="feat-body">
+            <p>Calorías quemadas, volumen total levantado, tiempo invertido. Cada sesión queda registrada para que veas cómo avanzas y entiendas qué semanas estuviste on fire.</p>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="mini-cta reveal">
+      <p class="mini-cta-text">Pronto disponible en tu teléfono</p>
+      <div class="stores stores-center">
+        <span class="store-badge" aria-label="Próximamente en App Store">
+          <img src="assets/badge-appstore.png" alt="Disponible en el App Store" />
+        </span>
+        <span class="store-badge" aria-label="Próximamente en Google Play">
+          <img src="assets/badge-googleplay.png" alt="Disponible en Google Play" />
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="section section-soft" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-dark">Cómo funciona</span>
+      <h2 class="h2">Tres pasos. Cero excusas.</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h3>Escanea tu cuerpo</h3>
+        <p>Mide tu peso, % de grasa y masa muscular con IA. Tu punto de partida queda registrado.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <h3>Desliza y entrena</h3>
+        <p>Acepta, cambia o descarta máquinas con swipe. Sigue el tempo y descansa con propósito.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <h3>Mide tu progreso</h3>
+        <p>Cada sesión y cada escaneo se suman. Ve cómo cambias semana a semana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MANIFESTO ========== -->
+<section class="manifesto" id="movimiento">
+  <div class="container">
+    <div class="manifesto-inner reveal">
+      <h2 class="h2 h2-light">
+        Hecha por gente que entrena. <br />
+        <span class="muted-light">Para gente que entrena.</span>
+      </h2>
+      <p class="lead lead-light">
+        Creemos que cuidar tu cuerpo no debería ser confuso, intimidante ni caro.
+        Por eso construimos Bodia: una forma simple de elegir qué entrenar con un swipe,
+        descansar con propósito y medir tu progreso real con IA.
+      </p>
+      <div class="manifesto-cta">
+        <a href="#cta" class="btn btn-light">Sé parte del movimiento</a>
+        <div class="stores">
+          <span class="store-badge" aria-label="Próximamente en App Store">
+            <img src="assets/badge-appstore.png" alt="Disponible en el App Store" />
+          </span>
+          <span class="store-badge" aria-label="Próximamente en Google Play">
+            <img src="assets/badge-googleplay.png" alt="Disponible en Google Play" />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TEAM ========== -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-dark">Equipo fundador</span>
+      <h2 class="h2">Cuatro socios. Una misión.</h2>
+      <p class="lead">Construyendo Bodia desde Chile, México y Estados Unidos.</p>
+    </div>
+
+    <div class="team-grid">
+      <article class="team-card reveal">
+        <div class="team-photo"><img src="assets/founder-alan.jpeg" alt="Alan Beckdorf" /></div>
+        <h3>Alan Beckdorf</h3>
+        <p class="role">Cofundador · Emprendedor Serial</p>
+        <p class="bio">Inversionista y empresario.</p>
+        <a href="https://instagram.com/alanbeckdorf" target="_blank" rel="noopener" class="team-ig">@alanbeckdorf</a>
+      </article>
+
+      <article class="team-card reveal">
+        <div class="team-photo"><img src="assets/founder-diego.jpeg" alt="Diego Venegas" /></div>
+        <h3>Diego Venegas</h3>
+        <p class="role">Cofundador · Empresario Fitness</p>
+        <p class="bio">Artista y figura pública. TV & Streaming LATAM.</p>
+        <a href="https://instagram.com/itsdiegovenegas" target="_blank" rel="noopener" class="team-ig">@itsdiegovenegas</a>
+      </article>
+
+      <article class="team-card reveal">
+        <div class="team-photo"><img src="assets/founder-seba.jpeg" alt="Sebastián Reyes" /></div>
+        <h3>Sebastián Reyes</h3>
+        <p class="role">Cofundador · Personal Trainer</p>
+        <p class="bio">Atleta de Red Bull y Under Armour.</p>
+        <a href="https://instagram.com/sebareyess_" target="_blank" rel="noopener" class="team-ig">@sebareyess_</a>
+      </article>
+
+      <article class="team-card reveal">
+        <div class="team-photo"><img src="assets/founder-pollo.jpeg" alt="Pollo Allendes" /></div>
+        <h3>Ignacio Allendes</h3>
+        <p class="role">Cofundador · Growth & Speaker</p>
+        <p class="bio">Top 1 en LinkedIn Growth. +100M generados para empresas.</p>
+        <a href="https://instagram.com/elpolloallendes" target="_blank" rel="noopener" class="team-ig">@elpolloallendes</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="section section-soft" id="faq">
+  <div class="container container-narrow">
+    <div class="section-head reveal">
+      <span class="eyebrow eyebrow-dark">Preguntas frecuentes</span>
+      <h2 class="h2">Lo que probablemente te estás preguntando.</h2>
+    </div>
+
+    <div class="faq">
+      <details class="faq-item reveal">
+        <summary>¿Cuándo estará disponible Bodia?</summary>
+        <p>Estamos en los últimos pasos antes del lanzamiento en App Store y Google Play. Deja tu correo y serás de los primeros en saberlo; además te llegará un beneficio exclusivo.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿En qué países estará disponible?</summary>
+        <p>Bodia está pensada para todo el mundo de habla hispana. Desde el día uno usa un español neutro para que cualquier persona, en Latinoamérica, España o comunidades hispanas en cualquier país, pueda entrenar sin barreras.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Sirve si entreno en casa o solo en gimnasio?</summary>
+        <p>Las dos. Bodia incluye ejercicios para gimnasio (máquinas, poleas, pesas libres) y para casa (con bandas o sin equipo). Tú deslizas y eliges lo que sí está disponible para ti.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Y si una máquina está ocupada o no me gusta un ejercicio?</summary>
+        <p>Para eso está el swipe. Derecha si te gusta. Izquierda si la máquina está ocupada o no quieres ese ejercicio hoy. Abajo si nunca tienes acceso a esa máquina y no quieres verla más.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Qué hace especial el escaneo corporal?</summary>
+        <p>Estimamos tu composición corporal (peso, % grasa, masa muscular) con IA. Cada escaneo queda guardado y te muestra cómo cambias en el tiempo. Es la forma más simple de ver tu progreso real, no solo lo que dice la balanza.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Cuánto va a costar?</summary>
+        <p>Estamos definiendo planes accesibles. Los que se unan a la lista tendrán beneficios exclusivos antes del lanzamiento público.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>¿Cómo cuidan mis datos?</summary>
+        <p>Tu información es tuya. La usamos solo para personalizar tu experiencia dentro de Bodia. Nada se vende, nada se comparte. Punto.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA FINAL ========== -->
+<section class="cta-final" id="cta">
+  <div class="container">
+    <div class="cta-card reveal">
+      <span class="eyebrow eyebrow-light">Únete al lanzamiento</span>
+      <h2 class="h2 h2-light">Sé parte de Bodia desde el primer día.</h2>
+      <p class="lead lead-light">Los primeros en unirse reciben beneficios exclusivos.</p>
+
+      <form class="email-form email-form-large" data-form="cta" novalidate>
+        <input type="email" name="email" placeholder="tu@email.com" required aria-label="Correo electrónico" />
+        <button type="submit" class="btn btn-light">Quiero ser parte</button>
+        <p class="form-msg form-msg-light" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="stores stores-light">
+        <span class="store-badge" aria-label="Próximamente en App Store">
+          <img src="assets/badge-appstore.png" alt="Disponible en el App Store" />
+        </span>
+        <span class="store-badge" aria-label="Próximamente en Google Play">
+          <img src="assets/badge-googleplay.png" alt="Disponible en Google Play" />
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-brand-top">
+        <img src="assets/logo.jpeg" alt="Bodia" class="brand-logo" />
+        <span class="brand-name">Bodia</span>
+      </div>
+      <p class="footer-tag">Tu coach personal con IA. Construido con 🖤 en Chile, México y USA.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Producto</h4>
+        <a href="#features">Funciones</a>
+        <a href="#how">Cómo funciona</a>
+        <a href="#faq">Preguntas</a>
+      </div>
+      <div>
+        <h4>Equipo</h4>
+        <a href="#team">Fundadores</a>
+        <a href="#movimiento">Movimiento</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#privacy-modal" data-modal-open="privacy-modal">Privacidad</a>
+        <a href="#terms-modal" data-modal-open="terms-modal">Términos</a>
+        <a href="mailto:hola@bodia.app">Contacto</a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>© <span id="year"></span> Bodia. Todos los derechos reservados.</small>
+    <div class="footer-bottom-right">
+      <div class="footer-socials" aria-label="Redes sociales">
+        <a href="https://instagram.com/bodia.app" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+            <circle cx="12" cy="12" r="4.25"></circle>
+            <circle cx="17.4" cy="6.6" r="1.1" class="social-dot"></circle>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@bodia.app" target="_blank" rel="noopener" class="footer-social" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M14.3 4c.4 2 1.8 3.4 3.7 3.8v2.7a6.7 6.7 0 0 1-3.6-1v5.2a5.1 5.1 0 1 1-5.1-5.1c.4 0 .8 0 1.1.1v2.8a2.7 2.7 0 1 0 1.5 2.4V4h2.4z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== LEGAL MODALS ========== -->
+<div class="modal-backdrop" data-modal-backdrop hidden></div>
+
+<section class="legal-modal" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title" hidden>
+  <div class="legal-modal-panel">
+    <button type="button" class="legal-modal-close" data-modal-close aria-label="Cerrar ventana">×</button>
+    <div class="legal-modal-body">
+      <span class="legal-kicker">Política de Privacidad</span>
+      <h2 id="privacy-title">Cómo tratamos tu información en Bodia</h2>
+      <p>Bodia recopila y trata datos personales para operar la plataforma, gestionar cuentas, responder solicitudes, mejorar la experiencia, ofrecer funciones de entrenamiento y cumplir obligaciones legales y de seguridad. Esto puede incluir datos de contacto, identificadores de dispositivo, datos de uso, preferencias, información técnica y, cuando la funcionalidad lo requiera y con tu consentimiento, información relacionada con bienestar, actividad física o métricas corporales que decidas ingresar o escanear.</p>
+      <p>No vendemos tus datos personales. Solo compartimos información con proveedores que nos ayudan a operar el servicio, procesar infraestructura, analítica, soporte, comunicaciones, prevención de fraude o cumplimiento normativo, siempre bajo obligaciones de confidencialidad y seguridad razonables.</p>
+      <p>Si la app habilita cámara, sensores, Apple Health, Google Fit, fotos, notificaciones, ubicación u otros permisos del dispositivo, Bodia solicitará autorización antes de acceder a ellos. Puedes revocar permisos desde la configuración de tu dispositivo, aunque algunas funciones pueden dejar de operar parcial o totalmente.</p>
+      <p>Tomamos medidas razonables de seguridad administrativas, técnicas y organizativas para proteger la información. Sin embargo, ningún sistema es completamente infalible y no podemos garantizar seguridad absoluta frente a accesos no autorizados, fallas técnicas o eventos fuera de nuestro control razonable.</p>
+      <p>Según tu jurisdicción, puedes tener derechos de acceso, corrección, eliminación, portabilidad, oposición, limitación de tratamiento o retiro del consentimiento. También puedes solicitar información sobre transferencias internacionales o el tratamiento de categorías sensibles cuando aplique. Para ejercer estos derechos, contáctanos en hola@bodia.app.</p>
+      <p>Bodia no está dirigida a menores de edad cuando la ley exija autorización especial, y puede restringir uso a mayores de 13, 16 o 18 años según la jurisdicción aplicable y el tipo de datos tratados. Si detectamos un registro incompatible con estas reglas, podremos suspender o eliminar la cuenta.</p>
+      <p>En caso de operar en Chile, Estados Unidos, México, la Unión Europea u otros territorios, procuramos adaptar nuestras prácticas a marcos aplicables de privacidad, consumo y protección de datos, incluidos principios de transparencia, finalidad, minimización, seguridad y ejercicio de derechos. Esta política debe complementarse con avisos específicos dentro de la app si una función requiere consentimiento adicional.</p>
+      <p>Podemos actualizar esta política para reflejar cambios de producto, seguridad, ley o requisitos de App Store y Google Play. La fecha de vigencia y la versión más reciente estarán disponibles en la app o en nuestras propiedades oficiales.</p>
+    </div>
+  </div>
+</section>
+
+<section class="legal-modal" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="terms-title" hidden>
+  <div class="legal-modal-panel">
+    <button type="button" class="legal-modal-close" data-modal-close aria-label="Cerrar ventana">×</button>
+    <div class="legal-modal-body">
+      <span class="legal-kicker">Términos y Condiciones</span>
+      <h2 id="terms-title">Reglas de uso, salud y limitación de responsabilidad</h2>
+      <p>Bodia ofrece contenido digital orientado a fitness, bienestar y organización del entrenamiento. La app no presta servicios médicos, no diagnostica enfermedades, no reemplaza a profesionales de salud, nutrición, medicina, kinesiología o entrenamiento presencial, y no constituye atención de emergencia.</p>
+      <p>Todo plan, sugerencia, rutina, escaneo, puntaje, recomendación o contenido generado por algoritmos, inteligencia artificial o por el equipo de Bodia es informativo y general. Antes de iniciar o modificar entrenamiento, nutrición, descanso o cualquier actividad física, debes evaluar si eres apto para ello y consultar a un profesional calificado si tienes lesiones, dolor, embarazo, cirugía reciente, condiciones cardíacas, metabólicas, respiratorias, neurológicas o cualquier otra condición relevante.</p>
+      <p>Usas Bodia bajo tu propia responsabilidad. Debes detener inmediatamente cualquier ejercicio o uso de la app si sientes dolor, mareo, falta de aire, malestar, pérdida de estabilidad o cualquier señal de riesgo. Bodia no será responsable por lesiones, accidentes, daños físicos, decisiones de entrenamiento, uso incorrecto de máquinas, errores de ejecución, sobrecarga, caídas, problemas médicos preexistentes o resultados no obtenidos.</p>
+      <p>Las métricas corporales, estimaciones, escaneos o comparativas visuales pueden ser aproximadas y no deben tratarse como mediciones clínicas, diagnósticos ni garantías de composición corporal real. La precisión puede variar por dispositivo, iluminación, postura, calidad de imagen, cambios fisiológicos y otros factores externos.</p>
+      <p>Eres responsable de usar equipamiento adecuado, respetar normas del gimnasio o del lugar donde entrenes, mantener técnica segura, supervisar tu entorno y cumplir las leyes locales aplicables. Si entrenas siendo menor de edad, con lesiones o en condiciones especiales, deberías hacerlo solo con autorización y supervisión apropiadas cuando la ley o tu situación lo requieran.</p>
+      <p>Bodia puede incluir compras, suscripciones, pruebas, comunicaciones promocionales, contenido de terceros, enlaces externos o integraciones con Apple, Google u otras plataformas. El uso de esas funciones puede estar sujeto además a términos, políticas y reglas de esas plataformas, incluyendo lineamientos de App Store Review Guidelines y Google Play Developer Program Policies.</p>
+      <p>En la máxima medida permitida por la ley aplicable, Bodia y sus fundadores, afiliados, empleados, contratistas y socios excluyen garantías expresas e implícitas de comerciabilidad, adecuación para un propósito particular, disponibilidad ininterrumpida, exactitud total, resultados garantizados y ausencia de errores. También limitan su responsabilidad por daños indirectos, incidentales, especiales, consecuenciales, punitivos o pérdida de datos, ingresos, oportunidades o reputación.</p>
+      <p>Si una jurisdicción no permite ciertas exclusiones o limitaciones, estas se aplicarán solo hasta el máximo permitido por la ley local. El resto de los términos seguirá vigente. Podemos suspender cuentas, remover contenido, rechazar acceso o modificar funciones cuando sea necesario por seguridad, abuso, cumplimiento legal o cambios de producto.</p>
+      <p>Estos términos deben revisarse y complementarse antes del lanzamiento final con datos societarios definitivos, jurisdicción aplicable, mecanismo de soporte, política de suscripciones, reembolsos y cualquier texto específico exigido por Apple, Google, autoridades de consumo o asesores legales del país donde opere formalmente Bodia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== TOAST ========== -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <div class="toast-icon">✓</div>
+  <div>
+    <strong>¡Gracias por unirte!</strong>
+    <small>Pronto te enviaremos novedades de Bodia.</small>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
