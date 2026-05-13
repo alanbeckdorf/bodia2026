@@ -1,0 +1,9 @@
+{
+  "name": "bodia-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing + admin backend for Bodia leads",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

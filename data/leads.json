@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ed2d6b20-986d-4c85-90ef-77fe3094f4e5",
+    "email": "alanbeckdorf@gmail.com",
+    "source": "landing",
+    "status": "new",
+    "observation": "",
+    "notes": "",
+    "createdAt": "2026-05-12T21:26:45.110Z",
+    "updatedAt": "2026-05-12T21:26:45.110Z",
+    "ip": "127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+    "tags": [
+      "waitlist"
+    ]
+  }
+]

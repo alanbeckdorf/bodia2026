@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bodia Backoffice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="admin-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="assets/logo.jpeg" alt="Bodia" class="brand-logo" />
+        <div>
+          <p class="brand-kicker">Bodia</p>
+          <h1>Backoffice</h1>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-panel">
+      <section class="login-card">
+        <div class="login-copy">
+          <span class="pill">Bodia Backoffice</span>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <label>
+            <span>Usuario</span>
+            <input type="text" name="username" placeholder="admin" required />
+          </label>
+          <label>
+            <span>Contraseña</span>
+            <input type="password" name="password" placeholder="Tu clave admin" required />
+          </label>
+          <button type="submit" class="btn btn-dark">Entrar al panel</button>
+          <p class="form-feedback" id="loginFeedback"></p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
