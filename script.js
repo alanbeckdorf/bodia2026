@@ -453,12 +453,17 @@
     };
     paintActiveLang(initialLang);
     langButtons.forEach((btn) => {
-      btn.addEventListener("click", () => {
+      const changeLang = () => {
         const selected = btn.dataset.lang || "es";
         localStorage.setItem("bodia_lang", selected);
         paintActiveLang(selected);
         applyLanguage(selected);
-      });
+        const url = new URL(window.location.href);
+        url.searchParams.set("lang", selected);
+        window.history.replaceState({}, "", url.toString());
+      };
+      btn.addEventListener("click", changeLang);
+      btn.addEventListener("touchstart", changeLang, { passive: true });
     });
   }
   applyLanguage(initialLang);
