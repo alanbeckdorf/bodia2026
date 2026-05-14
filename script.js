@@ -8,9 +8,9 @@
       join: "Únete",
       heroEyebrow: "Tu cuerpo · Tu progreso",
       heroTitle:
-        'Conoce Bodia <br />Fitness simple <br /><span class="h1-line">para <span class="grad">verte mejor</span></span>',
+        'Conoce Bodia <br />Tu entrenador <br /><span class="h1-line"><span class="grad">fitness inteligente</span></span>',
       heroSub:
-        "Desliza máquinas estilo Tinder, descansa con propósito y escanea tu cuerpo con inteligencia artificial. Así de simple.",
+        "Planes simples y personalizados según tu objetivo, nivel y cuerpo. Desliza máquinas con swipe, descansa con propósito y escanea tu cuerpo con inteligencia artificial.",
       heroStat1Title: "+2.3% músculo",
       heroStat1Sub: "vs. tu último escaneo",
       heroStat2Title: "14% grasa",
@@ -39,6 +39,21 @@
         "Calorías quemadas, volumen total levantado, tiempo invertido. Cada sesión queda registrada para que veas cómo avanzas y entiendas qué semanas estuviste on fire.",
       ],
       miniCta: "Pronto disponible en tu teléfono",
+      benefitsEyebrow: "Beneficios reales",
+      benefitsTitle: 'Planes de entrenamiento perfectos <span class="h2-accent">PARA TI</span>',
+      benefitsLead: "Todo conectado: personalización, ejecución y progreso real.",
+      benefits: [
+        ["Planes diseñados por profesionales", "Rutinas con estructura real para avanzar semana a semana."],
+        ["100% personalizado", "Filtra músculos, duración y objetivo para entrenar a tu manera."],
+        ["Entrenamiento del día claro", "Series, repeticiones, peso y foco muscular sin fricción."],
+        ["Desafíos que te mantienen constante", "Retos semanales para sostener motivación y adherencia."],
+      ],
+      benefitImages: [
+        "assets/benefit-tuplan.png",
+        "assets/benefit-miplan.png",
+        "assets/benefit-entrenamiento.png",
+        "assets/benefit-desafios.png",
+      ],
       howEyebrow: "Cómo funciona",
       howTitle: "Tres pasos. Cero excusas.",
       steps: [
@@ -67,35 +82,35 @@
         "Top 1 en LinkedIn Growth. +100M generados para empresas.",
       ],
       faqEyebrow: "Preguntas frecuentes",
-      faqTitle: "Lo que probablemente te estás preguntando.",
+      faqTitle: "Dudas comunes, respuestas claras.",
       faq: [
         [
-          "¿Cuándo estará disponible Bodia?",
-          "Estamos en los últimos pasos antes del lanzamiento en App Store y Google Play. Deja tu correo y serás de los primeros en saberlo; además te llegará un beneficio exclusivo.",
+          "¿Bodia sirve para principiantes y avanzados?",
+          "Sí. Bodia ajusta dificultad, volumen y progreso según tu nivel actual.",
         ],
         [
-          "¿En qué países estará disponible?",
-          "Bodia está pensada para todo el mundo de habla hispana. Desde el día uno usa un español neutro para que cualquier persona pueda entrenar sin barreras.",
+          "¿Cuándo empiezo a notar resultados?",
+          "Depende de tu constancia, alimentación y descanso. Muchas personas ven avances medibles en pocas semanas.",
         ],
         [
-          "¿Sirve si entreno en casa o solo en gimnasio?",
-          "Las dos. Bodia incluye ejercicios para gimnasio y para casa. Tú deslizas y eliges lo que sí está disponible para ti.",
+          "¿Cuántos días a la semana recomiendan entrenar?",
+          "Entre 3 y 5 días suele funcionar muy bien. Bodia adapta tu plan a tu disponibilidad real.",
         ],
         [
-          "¿Y si una máquina está ocupada o no me gusta un ejercicio?",
-          "Para eso está el swipe. Derecha si te gusta. Izquierda si la máquina está ocupada o no quieres ese ejercicio hoy. Abajo si nunca tienes acceso a esa máquina.",
+          "¿Puedo entrenar en casa con poco equipamiento?",
+          "Sí. Puedes filtrar ejercicios para casa, bandas, peso corporal o equipamiento limitado.",
         ],
         [
-          "¿Qué hace especial el escaneo corporal?",
-          "Estimamos tu composición corporal con IA. Cada escaneo queda guardado y te muestra cómo cambias en el tiempo.",
+          "¿Puedo editar mi plan y cambiar ejercicios?",
+          "Sí. Puedes hacer swipe para reemplazar o descartar ejercicios y dejar solo lo que te sirve.",
         ],
         [
-          "¿Cuánto va a costar?",
-          "Estamos definiendo planes accesibles. Los que se unan a la lista tendrán beneficios exclusivos antes del lanzamiento público.",
+          "¿Hay planes para mujeres y hombres?",
+          "Sí. Bodia personaliza según objetivo, nivel, composición corporal y contexto de entrenamiento.",
         ],
         [
-          "¿Cómo cuidan mis datos?",
-          "Tu información es tuya. La usamos solo para personalizar tu experiencia dentro de Bodia. Nada se vende, nada se comparte.",
+          "¿Cuánto dura un entrenamiento?",
+          "Normalmente entre 35 y 60 minutos, según foco, nivel y tiempo disponible del día.",
         ],
       ],
       ctaEyebrow: "Únete al lanzamiento",
@@ -155,9 +170,9 @@
       join: "Join",
       heroEyebrow: "Your body · Your progress",
       heroTitle:
-        'Meet Bodia <br />Simple fitness <br /><span class="h1-line">to <span class="grad">look better</span></span>',
+        'Meet Bodia <br />Your smart <br /><span class="h1-line"><span class="grad">fitness coach</span></span>',
       heroSub:
-        "Swipe machines like Tinder, rest with purpose, and scan your body with AI. That simple.",
+        "Personalized workout plans made simple for your goal, level, and body. Swipe through machines, rest with purpose, and scan your body with AI.",
       heroStat1Title: "+2.3% muscle",
       heroStat1Sub: "vs. your last scan",
       heroStat2Title: "14% body fat",
@@ -186,6 +201,21 @@
         "Calories burned, total volume lifted, and total time. Every session is recorded so you can track your progress.",
       ],
       miniCta: "Coming soon to your phone",
+      benefitsEyebrow: "Real benefits",
+      benefitsTitle: 'Perfect Workout Plans <span class="h2-accent">FOR YOU</span>',
+      benefitsLead: "Everything connected: personalization, execution, and real progress.",
+      benefits: [
+        ["Plans built by professionals", "Structured routines designed for steady weekly progress."],
+        ["100% personalized", "Filter muscles, duration, and goal to train your way."],
+        ["Clear daily workout", "Sets, reps, load, and muscle focus without friction."],
+        ["Challenges that keep you consistent", "Weekly challenges to sustain motivation and adherence."],
+      ],
+      benefitImages: [
+        "assets/benefit-tuplan-en.png",
+        "assets/benefit-miplan-en.png",
+        "assets/benefit-entrenamiento-en.png",
+        "assets/benefit-desafios-en.png",
+      ],
       howEyebrow: "How it works",
       howTitle: "Three steps. Zero excuses.",
       steps: [
@@ -214,42 +244,42 @@
         "Top 1 in LinkedIn Growth. +100M generated for companies.",
       ],
       faqEyebrow: "Frequently asked questions",
-      faqTitle: "What you are probably wondering.",
+      faqTitle: "Common questions, clear answers.",
       faq: [
         [
-          "When will Bodia be available?",
-          "We are in the final steps before launch on the App Store and Google Play. Leave your email to be among the first to know.",
+          "Is Bodia suitable for both beginner and advanced gym goers?",
+          "Yes. Bodia adjusts difficulty, volume, and progression to your current level.",
         ],
         [
-          "Which countries will Bodia be available in?",
-          "Bodia is built for the Spanish-speaking world and expanding globally with a clear, easy training experience.",
+          "When should I expect to notice results?",
+          "It depends on your consistency, nutrition, and recovery. Many users see measurable progress within a few weeks.",
         ],
         [
-          "Can I use it at home or only at the gym?",
-          "Both. Bodia includes gym and home exercises. You swipe and choose what is available for you.",
+          "What is the recommended number of days to work out?",
+          "Usually 3 to 5 days per week works very well. Bodia adapts your plan to your real availability.",
         ],
         [
-          "What if a machine is busy or I dislike an exercise?",
-          "That is exactly why swipe exists. Right for yes, left for no, down to hide permanently.",
+          "Can I use the app to work out at home with limited equipment?",
+          "Yes. You can filter for home workouts, bands, bodyweight, or limited equipment.",
         ],
         [
-          "What makes the body scan special?",
-          "AI estimates your body composition and tracks changes over time in a simple visual way.",
+          "Can I edit my plan, for example, change or swap out exercises?",
+          "Yes. You can swipe to replace or remove exercises and keep only what works for you.",
         ],
         [
-          "How much will it cost?",
-          "We are defining accessible plans. Early users get exclusive launch benefits.",
+          "Are there plans for women and men?",
+          "Yes. Bodia personalizes by goal, level, body composition, and training context.",
         ],
         [
-          "How do you protect my data?",
-          "Your data is yours. We only use it to personalize your Bodia experience.",
+          "How long is a workout?",
+          "Most sessions are between 35 and 60 minutes, depending on focus, level, and your available time that day.",
         ],
       ],
       ctaEyebrow: "Join the launch",
       ctaTitle: "Be part of Bodia from day one.",
       ctaLead: "Early users get exclusive benefits.",
-      ctaBtn: "I’m In",
-      footerTag: "Your personal AI coach. Built with 🖤 across Chile, Mexico, and USA.",
+      ctaBtn: "I'm In",
+      footerTag: "Your personal AI coach. Built with \u{1F5A4} across Chile, Mexico, and USA.",
       footerCols: ["Product", "Team", "Legal"],
       footerLinks: ["Features", "How it works", "FAQ", "Founders", "Movement", "Privacy", "Terms", "Contact"],
       copyright: "All rights reserved.",
@@ -296,7 +326,7 @@
     },
   };
 
-  let currentLang = "es";
+  let currentLang = "en";
 
   function setText(selector, text) {
     const el = document.querySelector(selector);
@@ -359,6 +389,21 @@
     });
 
     setText(".mini-cta-text", t.miniCta);
+    setText("#benefits .section-head .eyebrow", t.benefitsEyebrow);
+    setHtml("#benefits .section-head .h2", t.benefitsTitle);
+    setText("#benefits .section-head .lead", t.benefitsLead);
+    document.querySelectorAll("#benefits .benefit-row").forEach((card, i) => {
+      const h3 = card.querySelector("h3");
+      const p = card.querySelector("p");
+      const img = card.querySelector(".benefit-media img");
+      if (t.benefits[i]) {
+        if (h3) h3.textContent = t.benefits[i][0];
+        if (p) p.textContent = t.benefits[i][1];
+      }
+      if (img && t.benefitImages && t.benefitImages[i]) {
+        img.setAttribute("src", t.benefitImages[i]);
+      }
+    });
     setText("#how .section-head .eyebrow", t.howEyebrow);
     setText("#how .section-head .h2", t.howTitle);
 
@@ -444,7 +489,7 @@
   const langButtons = Array.from(document.querySelectorAll(".lang-flag"));
   const urlLang = new URLSearchParams(window.location.search).get("lang");
   const savedLang = localStorage.getItem("bodia_lang");
-  const initialLang = urlLang || savedLang || "es";
+  const initialLang = urlLang || savedLang || "en";
   if (langButtons.length) {
     const paintActiveLang = (lang) => {
       langButtons.forEach((btn) => {
