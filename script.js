@@ -67,8 +67,8 @@
         "Creemos que cuidar tu cuerpo no debería ser confuso, intimidante ni caro. Por eso construimos Bodia: una forma simple de elegir qué entrenar con un swipe, descansar con propósito y medir tu progreso real con IA.",
       manifestoBtn: "Sé parte del movimiento",
       teamEyebrow: "Equipo fundador",
-      teamTitle: "Cuatro socios. Una misión.",
-      teamLead: "Construyendo Bodia desde Chile, México y Estados Unidos.",
+      teamTitle: "Usado por tus influencers fitness favoritos 👀",
+      teamLead: "Fundadores que entrenan de verdad y construyen Bodia desde Chile, México y Estados Unidos.",
       teamRoles: [
         "Cofundador · Emprendedor Serial",
         "Cofundador · Empresario Fitness",
@@ -229,8 +229,8 @@
         "Taking care of your body should not be confusing, intimidating, or expensive. Bodia makes training simple, clear, and measurable with AI.",
       manifestoBtn: "Join the movement",
       teamEyebrow: "Founding team",
-      teamTitle: "Four founders. One mission.",
-      teamLead: "Building Bodia across Chile, Mexico, and the United States.",
+      teamTitle: "Used by your favorite fitness influencers 👀",
+      teamLead: "Founders who actually train and are building Bodia across Chile, Mexico, and the United States.",
       teamRoles: [
         "Co-founder · Serial Entrepreneur",
         "Co-founder · Fitness Entrepreneur",

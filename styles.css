@@ -3,7 +3,7 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #0a0a0a;
@@ -572,21 +572,33 @@ body.lang-es .hero-image {
 .manifesto-inner .btn { margin-top: 24px; }
 
 /* ============ TEAM ============ */
+.section-head-team {
+  text-align: center;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 .team-card {
-  background: #fff;
+  background: #0c1526;
   border-radius: var(--radius);
   overflow: hidden;
-  border: 1px solid var(--line);
-  padding: 0 0 28px;
+  border: 1px solid rgba(73, 132, 255, 0.35);
+  padding: 0;
   text-align: left;
-  transition: transform .25s ease, box-shadow .25s ease;
+  position: relative;
+  min-height: 540px;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
-.team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(8, 17, 34, 0.36);
+  border-color: rgba(73, 132, 255, 0.8);
+}
 .team-card.reveal {
   opacity: 0;
   transform: translateX(-42px);
@@ -601,17 +613,30 @@ body.lang-es .hero-image {
 .team-grid .team-card.reveal:nth-child(3).visible { transition-delay: .36s; }
 .team-grid .team-card.reveal:nth-child(4).visible { transition-delay: .48s; }
 .team-photo {
-  width: 100%; aspect-ratio: 3/4;
+  width: 100%; height: 100%;
   overflow: hidden;
-  background: var(--bg-soft);
+  background: #101a2f;
 }
 .team-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .4s ease; }
 .team-card:hover .team-photo img { transform: scale(1.04); }
-.team-card h3 { font-size: 20px; margin: 22px 24px 4px; letter-spacing: -0.02em; }
-.team-card .role { color: var(--accent); font-size: 13px; font-weight: 600; margin: 0 24px 12px; text-transform: uppercase; letter-spacing: 0.04em; }
-.team-card .bio { color: var(--ink-3); font-size: 14px; margin: 0 24px 14px; }
-.team-ig { display: inline-block; margin: 0 24px; font-size: 13px; color: var(--ink); font-weight: 600; }
-.team-ig:hover { color: var(--accent); }
+.team-overlay {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: linear-gradient(180deg, rgba(5, 10, 20, 0.2) 0%, rgba(5, 10, 20, 0.72) 100%);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 14px 14px 12px;
+  color: #fff;
+}
+.team-card h3 { font-size: 29px; margin: 0 0 4px; letter-spacing: -0.02em; line-height: 1.06; color: #fff; }
+.team-card .role { color: #7cb0ff; font-size: 11px; font-weight: 700; margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.05em; }
+.team-card .bio { color: rgba(230,236,248,0.9); font-size: 13px; margin: 0 0 8px; line-height: 1.35; }
+.team-ig { display: inline-block; margin: 0; font-size: 12px; color: #ffffff; font-weight: 700; }
+.team-ig:hover { color: #8ab9ff; }
 
 /* ============ FAQ ============ */
 #faq {
