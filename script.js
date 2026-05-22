@@ -10,7 +10,7 @@
       heroTitle:
         'Conoce Bodia <br />Tu entrenador <br /><span class="h1-line"><span class="grad">fitness inteligente</span></span>',
       heroSub:
-        "Planes simples y personalizados según tu objetivo, nivel y cuerpo. Desliza máquinas con swipe, descansa con propósito y escanea tu cuerpo con inteligencia artificial.",
+        "Planes simples y personalizados según tu objetivo, nivel y cuerpo. Desliza máquinas con swipe, descansa con propósito y escanea tu cuerpo con IA.",
       heroStat1Title: "+2.3% músculo",
       heroStat1Sub: "vs. tu último escaneo",
       heroStat2Title: "14% grasa",
@@ -38,8 +38,6 @@
         "Frases que motivan, consejos de nutrición y respiración entre series. El descanso también construye resultados.",
         "Calorías quemadas, volumen total levantado, tiempo invertido. Cada sesión queda registrada para que veas cómo avanzas y entiendas qué semanas estuviste on fire.",
       ],
-      miniCta: "Pronto disponible en tu teléfono",
-      benefitsEyebrow: "Beneficios reales",
       benefitsTitle: 'Planes de entrenamiento perfectos <span class="h2-accent">PARA TI</span>',
       benefitsLead: "Todo conectado: personalización, ejecución y progreso real.",
       benefits: [
@@ -68,12 +66,12 @@
       manifestoBtn: "Sé parte del movimiento",
       teamEyebrow: "Equipo fundador",
       teamTitle: "Usado por tus influencers fitness favoritos 👀",
-      teamLead: "Fundadores que entrenan de verdad y construyen Bodia desde Chile, México y Estados Unidos.",
+      teamLead: "",
       teamRoles: [
-        "Cofundador · Emprendedor Serial",
-        "Cofundador · Empresario Fitness",
-        "Cofundador · Personal Trainer",
-        "Cofundador · Growth & Speaker",
+        "Emprendedor Serial",
+        "Empresario Fitness",
+        "Personal Trainer",
+        "Growth & Speaker",
       ],
       teamBios: [
         "Inversionista y empresario.",
@@ -91,6 +89,10 @@
         [
           "¿Cuándo empiezo a notar resultados?",
           "Depende de tu constancia, alimentación y descanso. Muchas personas ven avances medibles en pocas semanas.",
+        ],
+        [
+          "¿Cómo funciona el escaneo?",
+          "Escaneas cuando quieres y te muestra todos tus parámetros clave de forma simple.",
         ],
         [
           "¿Cuántos días a la semana recomiendan entrenar?",
@@ -113,11 +115,9 @@
           "Normalmente entre 35 y 60 minutos, según foco, nivel y tiempo disponible del día.",
         ],
       ],
-      ctaEyebrow: "Únete al lanzamiento",
-      ctaTitle: "Sé parte de Bodia desde el primer día.",
-      ctaLead: "Los primeros en unirse reciben beneficios exclusivos.",
+      ctaTitle: "Sé parte de Bodia.",
       ctaBtn: "Quiero ser parte",
-      footerTag: "Tu coach personal con IA. Construido con 🖤 en Chile, México y USA.",
+      footerTag: "Tu coach personal con IA. Construido con 🖤.",
       footerCols: ["Producto", "Equipo", "Legal"],
       footerLinks: ["Funciones", "Cómo funciona", "Preguntas", "Fundadores", "Movimiento", "Privacidad", "Términos", "Contacto"],
       copyright: "Todos los derechos reservados.",
@@ -200,8 +200,6 @@
         "Motivational lines, nutrition and breathing tips between sets. Recovery also builds results.",
         "Calories burned, total volume lifted, and total time. Every session is recorded so you can track your progress.",
       ],
-      miniCta: "Coming soon to your phone",
-      benefitsEyebrow: "Real benefits",
       benefitsTitle: 'Perfect Workout Plans <span class="h2-accent">FOR YOU</span>',
       benefitsLead: "Everything connected: personalization, execution, and real progress.",
       benefits: [
@@ -230,12 +228,12 @@
       manifestoBtn: "Join the movement",
       teamEyebrow: "Founding team",
       teamTitle: "Used by your favorite fitness influencers 👀",
-      teamLead: "Founders who actually train and are building Bodia across Chile, Mexico, and the United States.",
+      teamLead: "",
       teamRoles: [
-        "Co-founder · Serial Entrepreneur",
-        "Co-founder · Fitness Entrepreneur",
-        "Co-founder · Personal Trainer",
-        "Co-founder · Growth & Speaker",
+        "Serial Entrepreneur",
+        "Fitness Entrepreneur",
+        "Personal Trainer",
+        "Growth & Speaker",
       ],
       teamBios: [
         "Investor and entrepreneur.",
@@ -253,6 +251,10 @@
         [
           "When should I expect to notice results?",
           "It depends on your consistency, nutrition, and recovery. Many users see measurable progress within a few weeks.",
+        ],
+        [
+          "How does the scan work?",
+          "You scan whenever you want and it shows all your key parameters in a simple way.",
         ],
         [
           "What is the recommended number of days to work out?",
@@ -275,11 +277,9 @@
           "Most sessions are between 35 and 60 minutes, depending on focus, level, and your available time that day.",
         ],
       ],
-      ctaEyebrow: "Join the launch",
       ctaTitle: "Be part of Bodia from day one.",
-      ctaLead: "Early users get exclusive benefits.",
       ctaBtn: "I'm In",
-      footerTag: "Your personal AI coach. Built with \u{1F5A4} across Chile, Mexico, and USA.",
+      footerTag: "Your personal AI coach. Built with \u{1F5A4}.",
       footerCols: ["Product", "Team", "Legal"],
       footerLinks: ["Features", "How it works", "FAQ", "Founders", "Movement", "Privacy", "Terms", "Contact"],
       copyright: "All rights reserved.",
@@ -388,8 +388,6 @@
       if (t.featureImages[i]) card.dataset.img = t.featureImages[i];
     });
 
-    setText(".mini-cta-text", t.miniCta);
-    setText("#benefits .section-head .eyebrow", t.benefitsEyebrow);
     setHtml("#benefits .section-head .h2", t.benefitsTitle);
     setText("#benefits .section-head .lead", t.benefitsLead);
     document.querySelectorAll("#benefits .benefit-row").forEach((card, i) => {
@@ -417,10 +415,7 @@
     });
 
     setHtml("#movimiento .h2", t.manifestoTitle);
-    setText("#movimiento .lead", t.manifestoLead);
-    setText("#movimiento .btn", t.manifestoBtn);
 
-    setText("#team .section-head .eyebrow", t.teamEyebrow);
     setText("#team .section-head .h2", t.teamTitle);
     setText("#team .section-head .lead", t.teamLead);
     document.querySelectorAll("#team .team-card .role").forEach((el, i) => {
@@ -441,9 +436,7 @@
       }
     });
 
-    setText("#cta .eyebrow", t.ctaEyebrow);
     setText("#cta .h2", t.ctaTitle);
-    setText("#cta .lead", t.ctaLead);
     setText("#cta .email-form .btn", t.ctaBtn);
 
     setText(".footer-tag", t.footerTag);
@@ -451,8 +444,11 @@
       if (t.footerCols[i]) el.textContent = t.footerCols[i];
     });
     const footerLinks = document.querySelectorAll(".footer-cols a");
+    const footerLinkLabels = (t.footerLinks || []).filter(
+      (label) => label !== "Fundadores" && label !== "Founders"
+    );
     footerLinks.forEach((el, i) => {
-      if (t.footerLinks[i]) el.textContent = t.footerLinks[i];
+      if (footerLinkLabels[i]) el.textContent = footerLinkLabels[i];
     });
     setText(".footer-bottom small", `© ${new Date().getFullYear()} Bodia. ${t.copyright}`);
 

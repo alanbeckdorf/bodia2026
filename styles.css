@@ -509,13 +509,13 @@ body.lang-es .hero-image {
   max-width: 540px;
 }
 .benefit-copy h3 {
-  font-size: clamp(30px, 4vw, 48px);
+  font-size: clamp(24px, 3vw, 40px);
   margin-bottom: 12px;
   letter-spacing: -0.02em;
   line-height: 1.02;
 }
 .benefit-copy p {
-  font-size: clamp(19px, 2vw, 34px);
+  font-size: clamp(16px, 1.6vw, 28px);
   line-height: 1.25;
   color: var(--ink-3);
   margin: 0;
