@@ -726,11 +726,6 @@ body.lang-es .hero-image {
   padding-top: 24px; border-top: 1px solid var(--line);
   color: var(--ink-3);
 }
-.footer-collab {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 12px;
-}
 .footer-collab-text {
   margin: 0;
   display: flex;
@@ -751,7 +746,9 @@ body.lang-es .hero-image {
 .footer-bottom-right {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 .footer-socials {
   display: flex;
@@ -1001,7 +998,6 @@ body.lang-es .hero-image {
   .footer-cols { grid-template-columns: 1fr 1fr; }
   .footer-bottom,
   .footer-bottom-right { flex-direction: column; gap: 10px; text-align: center; }
-  .footer-collab { justify-content: center; }
   .footer-collab-text { justify-content: center; text-align: center; }
   .legal-modal-panel { border-radius: 22px; }
   .legal-modal-close { top: 12px; right: 12px; width: 42px; height: 42px; }
