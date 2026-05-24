@@ -121,6 +121,8 @@
       footerCols: ["Producto", "Equipo", "Legal"],
       footerLinks: ["Funciones", "Cómo funciona", "Preguntas", "Fundadores", "Movimiento", "Privacidad", "Términos", "Contacto"],
       copyright: "Todos los derechos reservados.",
+      partnerCtaPrefix: "¿Tienes una idea de app o quieres crear algo así?",
+      partnerCtaLink: "Contáctanos",
       privacyKicker: "Política de Privacidad",
       privacyTitle: "Cómo tratamos tu información en Bodia",
       privacyParagraphs: [
@@ -283,6 +285,8 @@
       footerCols: ["Product", "Team", "Legal"],
       footerLinks: ["Features", "How it works", "FAQ", "Founders", "Movement", "Privacy", "Terms", "Contact"],
       copyright: "All rights reserved.",
+      partnerCtaPrefix: "Do you have an app idea or want to build something like this?",
+      partnerCtaLink: "Contact us",
       privacyKicker: "Privacy Policy",
       privacyTitle: "How we handle your information at Bodia",
       privacyParagraphs: [
@@ -451,6 +455,8 @@
       if (footerLinkLabels[i]) el.textContent = footerLinkLabels[i];
     });
     setText(".footer-bottom small", `© ${new Date().getFullYear()} Bodia. ${t.copyright}`);
+    setText("#partner-cta-prefix", t.partnerCtaPrefix);
+    setText("#partner-cta-link", t.partnerCtaLink);
 
     setText("#privacy-modal .legal-kicker", t.privacyKicker);
     setText("#privacy-title", t.privacyTitle);

@@ -726,6 +726,28 @@ body.lang-es .hero-image {
   padding-top: 24px; border-top: 1px solid var(--line);
   color: var(--ink-3);
 }
+.footer-collab {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+}
+.footer-collab-text {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+.footer-collab-text a {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer-collab-text a:hover {
+  text-decoration: underline;
+}
 .footer-bottom-right {
   display: flex;
   align-items: center;
@@ -979,6 +1001,8 @@ body.lang-es .hero-image {
   .footer-cols { grid-template-columns: 1fr 1fr; }
   .footer-bottom,
   .footer-bottom-right { flex-direction: column; gap: 10px; text-align: center; }
+  .footer-collab { justify-content: center; }
+  .footer-collab-text { justify-content: center; text-align: center; }
   .legal-modal-panel { border-radius: 22px; }
   .legal-modal-close { top: 12px; right: 12px; width: 42px; height: 42px; }
   .h1 { font-size: 34px; }
