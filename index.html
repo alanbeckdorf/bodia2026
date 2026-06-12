@@ -1,25 +1,29 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#ffffff" />
-<title>Bodia | Download Today</title>
-<meta name="description" content="Bodia is the first AI fitness coach that scans your body, adapts your routine, and guides every rep. Coming soon on the App Store and Google Play." />
+<title>Bodia | Descarga Hoy</title>
+<meta name="description" content="Bodia es el entrenador fitness con IA que escanea tu cuerpo, adapta tu rutina y te guía en cada repetición." />
 <meta name="keywords" content="fitness app, AI fitness coach, gym routine app, workout app, body scan app, progress tracker" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://bodia.app/" />
 <link rel="alternate" hreflang="es" href="https://bodia.app/?lang=es" />
 <link rel="alternate" hreflang="en" href="https://bodia.app/?lang=en" />
+<link rel="alternate" hreflang="pt" href="https://bodia.app/?lang=pt" />
+<link rel="alternate" hreflang="fr" href="https://bodia.app/?lang=fr" />
+<link rel="alternate" hreflang="de" href="https://bodia.app/?lang=de" />
+<link rel="alternate" hreflang="hi" href="https://bodia.app/?lang=hi" />
 <link rel="alternate" hreflang="x-default" href="https://bodia.app/" />
-<meta property="og:title" content="Bodia - Your AI fitness coach" />
-<meta property="og:description" content="Scan your body, get your plan, and train with clarity. Coming soon on iOS and Android." />
+<meta property="og:title" content="Bodia | Descarga Hoy" />
+<meta property="og:description" content="Escanea tu cuerpo, recibe tu plan y entrena con claridad gracias a la IA." />
 <meta property="og:type" content="website" />
 <link rel="icon" type="image/jpeg" href="assets/logo.jpeg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=20260513-2" />
+<link rel="stylesheet" href="styles.css?v=20260612-2" />
 </head>
 <body>
 
@@ -31,21 +35,51 @@
       <span class="brand-name">Bodia</span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#features">The App</a>
-      <a href="#how">How it works</a>
-      <a href="#movimiento">Movement</a>
-      <a href="#team">Team</a>
-      <a href="#faq">FAQ</a>
+      <a href="#features">La app</a>
+      <a href="#how">Cómo funciona</a>
+      <a href="#movimiento">Movimiento</a>
+      <a href="#team">Equipo</a>
+      <a href="#faq">Preguntas</a>
     </nav>
-    <a href="#cta" class="btn btn-primary btn-sm">Join</a>
-    <div class="lang-switch" role="group" aria-label="Language selector">
-      <button type="button" class="lang-flag" data-lang="es" aria-label="Espanol">
-        <img src="https://flagcdn.com/w20/es.png" alt="" />
+    <a href="#cta" class="btn btn-primary btn-sm">Únete</a>
+    <div class="lang-switch" aria-label="Language selector">
+      <button
+        type="button"
+        class="lang-current"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-label="Seleccionar idioma"
+      >
+        <img src="https://flagcdn.com/w20/es.png" alt="" class="lang-current-flag" />
+        <span class="lang-current-caret"></span>
       </button>
-      <button type="button" class="lang-flag is-active" data-lang="en" aria-label="English">
-        <img src="https://flagcdn.com/w20/us.png" alt="" />
-      </button>
-    </div>
+      <div class="lang-menu" role="menu">
+          <button type="button" class="lang-flag is-active" data-lang="es" aria-label="Español" role="menuitem">
+            <img src="https://flagcdn.com/w20/es.png" alt="" />
+            <span>Español</span>
+          </button>
+          <button type="button" class="lang-flag" data-lang="en" aria-label="English" role="menuitem">
+            <img src="https://flagcdn.com/w20/us.png" alt="" />
+            <span>English</span>
+          </button>
+          <button type="button" class="lang-flag" data-lang="pt" aria-label="Português" role="menuitem">
+            <img src="https://flagcdn.com/w20/br.png" alt="" />
+            <span>Português</span>
+          </button>
+          <button type="button" class="lang-flag" data-lang="fr" aria-label="Français" role="menuitem">
+            <img src="https://flagcdn.com/w20/fr.png" alt="" />
+            <span>Français</span>
+          </button>
+          <button type="button" class="lang-flag" data-lang="de" aria-label="Deutsch" role="menuitem">
+            <img src="https://flagcdn.com/w20/de.png" alt="" />
+            <span>Deutsch</span>
+          </button>
+          <button type="button" class="lang-flag" data-lang="hi" aria-label="हिन्दी" role="menuitem">
+            <img src="https://flagcdn.com/w20/in.png" alt="" />
+            <span>हिन्दी</span>
+          </button>
+        </div>
+      </div>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -67,13 +101,13 @@
         <span class="h1-line"><span class="grad">fitness inteligente</span></span>
       </h1>
       <p class="hero-sub">
-        Personalized workout plans made simple for your goal, level, and body.
-        Swipe through machines, rest with purpose, and scan your body with AI.
+        Planes simples y personalizados según tu objetivo, nivel y cuerpo.
+        Desliza máquinas con swipe, descansa con propósito y escanea tu cuerpo con IA.
       </p>
 
       <form class="email-form" data-form="hero" novalidate>
         <input type="email" name="email" placeholder="your@email.com" required aria-label="Email" />
-        <button type="submit" class="btn btn-primary">I'm In</button>
+        <button type="submit" class="btn btn-primary">Quiero ser parte</button>
         <p class="form-msg" role="status" aria-live="polite"></p>
       </form>
 
@@ -390,7 +424,7 @@
 
       <form class="email-form email-form-large" data-form="cta" novalidate>
         <input type="email" name="email" placeholder="your@email.com" required aria-label="Email" />
-        <button type="submit" class="btn btn-light">I'm In</button>
+        <button type="submit" class="btn btn-light">Quiero ser parte</button>
         <p class="form-msg form-msg-light" role="status" aria-live="polite"></p>
       </form>
 
@@ -509,7 +543,7 @@
   </div>
 </div>
 
-<script src="script.js?v=20260513-1"></script>
+<script src="script.js?v=20260612-2"></script>
 </body>
 </html>
 
