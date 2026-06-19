@@ -45,7 +45,7 @@ p { margin: 0; }
 
 /* ============ TYPOGRAPHY ============ */
 .h1 {
-  font-size: clamp(34px, 4.8vw, 60px);
+  font-size: clamp(31px, 4.2vw, 54px);
   font-weight: 900;
   line-height: 1.08;
   letter-spacing: -0.03em;
@@ -1063,13 +1063,13 @@ p { margin: 0; }
   .footer-collab-text { justify-content: center; text-align: center; }
   .legal-modal-panel { border-radius: 22px; }
   .legal-modal-close { top: 12px; right: 12px; width: 42px; height: 42px; }
-  .h1 { font-size: 34px; }
+  .h1 { font-size: 32px; }
   .h1 .grad { white-space: nowrap; }
   .float-card { font-size: 12px; padding: 10px 12px; }
   .faq-item summary { font-size: 18px; }
   .faq-item p { font-size: 14px; }
 }
 @media (max-width: 380px) {
-  .h1 { font-size: 30px; }
+  .h1 { font-size: 28px; }
 }
 
