@@ -1073,13 +1073,128 @@
     }
   }
 
+  const AUTO_LANG_STORAGE_KEY = "bodia_lang_auto";
   const langSwitch = document.querySelector(".lang-switch");
   const langCurrent = document.querySelector(".lang-current");
   const langCurrentFlag = document.querySelector(".lang-current-flag");
   const langButtons = Array.from(document.querySelectorAll(".lang-flag"));
-  const urlLang = new URLSearchParams(window.location.search).get("lang");
+  const url = new URL(window.location.href);
+  const urlLang = url.searchParams.get("lang");
   const savedLang = localStorage.getItem("bodia_lang");
-  const initialLang = i18n[urlLang] ? urlLang : i18n[savedLang] ? savedLang : "es";
+
+  function getBrowserLocaleCandidates() {
+    const candidates = [];
+    if (Array.isArray(navigator.languages)) candidates.push(...navigator.languages);
+    if (navigator.language) candidates.push(navigator.language);
+    if (navigator.userLanguage) candidates.push(navigator.userLanguage);
+    return candidates.filter(Boolean);
+  }
+
+  function getRegionFromLocale(locale) {
+    if (!locale) return "";
+    try {
+      if (typeof Intl !== "undefined" && typeof Intl.Locale === "function") {
+        return new Intl.Locale(locale).region || "";
+      }
+    } catch {}
+    const match = String(locale).replace("_", "-").match(/-([A-Za-z]{2}|\d{3})$/);
+    return match ? match[1].toUpperCase() : "";
+  }
+
+  function mapRegionToSupportedLanguage(region) {
+    const regionMap = {
+      AR: "es",
+      BO: "es",
+      BR: "pt",
+      CL: "es",
+      CN: "zh",
+      CO: "es",
+      CR: "es",
+      CU: "es",
+      DE: "de",
+      DO: "es",
+      EC: "es",
+      ES: "es",
+      FR: "fr",
+      GT: "es",
+      HK: "zh",
+      HN: "es",
+      IN: "hi",
+      MO: "zh",
+      MX: "es",
+      NI: "es",
+      PA: "es",
+      PE: "es",
+      PR: "es",
+      PT: "pt",
+      PY: "es",
+      SV: "es",
+      TW: "zh",
+      UY: "es",
+      VE: "es",
+      AT: "de",
+      CH: "de",
+      BE: "fr",
+      CA: "en",
+      GB: "en",
+      IE: "en",
+      NZ: "en",
+      US: "en",
+      AU: "en",
+    };
+    return regionMap[region] || "";
+  }
+
+  function mapLocaleToSupportedLanguage(locale) {
+    const normalized = String(locale || "").toLowerCase().replace("_", "-");
+    if (!normalized) return "";
+    const base = normalized.split("-")[0];
+    if (i18n[base]) return base;
+    if (base === "zh") return "zh";
+    const region = getRegionFromLocale(normalized);
+    return mapRegionToSupportedLanguage(region);
+  }
+
+  function detectLanguageFromEnvironment() {
+    const localeCandidates = getBrowserLocaleCandidates();
+    for (const candidate of localeCandidates) {
+      const mapped = mapLocaleToSupportedLanguage(candidate);
+      if (mapped && i18n[mapped]) return mapped;
+    }
+
+    const timeZone = Intl.DateTimeFormat?.().resolvedOptions?.().timeZone || "";
+    const timeZoneMap = [
+      { pattern: /^America\/Sao_Paulo$/i, lang: "pt" },
+      { pattern: /^America\/Belem$/i, lang: "pt" },
+      { pattern: /^America\/Fortaleza$/i, lang: "pt" },
+      { pattern: /^America\/Recife$/i, lang: "pt" },
+      { pattern: /^America\/Maceio$/i, lang: "pt" },
+      { pattern: /^America\/Bahia$/i, lang: "pt" },
+      { pattern: /^America\/Manaus$/i, lang: "pt" },
+      { pattern: /^America\/Cuiaba$/i, lang: "pt" },
+      { pattern: /^America\/Porto_Velho$/i, lang: "pt" },
+      { pattern: /^America\/Boa_Vista$/i, lang: "pt" },
+      { pattern: /^America\/Rio_Branco$/i, lang: "pt" },
+      { pattern: /^America\/Noronha$/i, lang: "pt" },
+      { pattern: /^Europe\/Paris$/i, lang: "fr" },
+      { pattern: /^Europe\/Berlin$/i, lang: "de" },
+      { pattern: /^Asia\/Kolkata$/i, lang: "hi" },
+      { pattern: /^Asia\/Shanghai$/i, lang: "zh" },
+      { pattern: /^Asia\/Hong_Kong$/i, lang: "zh" },
+      { pattern: /^Asia\/Taipei$/i, lang: "zh" },
+    ];
+    const matchedZone = timeZoneMap.find((entry) => entry.pattern.test(timeZone));
+    if (matchedZone && i18n[matchedZone.lang]) return matchedZone.lang;
+
+    return "es";
+  }
+
+  const autoDetectedLang = detectLanguageFromEnvironment();
+  const initialLang = i18n[urlLang]
+    ? urlLang
+    : i18n[savedLang]
+      ? savedLang
+      : autoDetectedLang;
 
   if (langButtons.length) {
     const paintActiveLang = (lang) => {
@@ -1118,12 +1233,13 @@
       btn.addEventListener("click", () => {
         const selected = i18n[btn.dataset.lang] ? btn.dataset.lang : "es";
         localStorage.setItem("bodia_lang", selected);
+        localStorage.removeItem(AUTO_LANG_STORAGE_KEY);
         paintActiveLang(selected);
         applyLanguage(selected);
         closeLangMenu();
-        const url = new URL(window.location.href);
-        url.searchParams.set("lang", selected);
-        window.history.replaceState({}, "", url.toString());
+        const nextUrl = new URL(window.location.href);
+        nextUrl.searchParams.set("lang", selected);
+        window.history.replaceState({}, "", nextUrl.toString());
       });
     });
 
@@ -1138,6 +1254,11 @@
   }
 
   applyLanguage(initialLang);
+  if (!i18n[urlLang] && !i18n[savedLang]) {
+    localStorage.setItem(AUTO_LANG_STORAGE_KEY, autoDetectedLang);
+    url.searchParams.set("lang", initialLang);
+    window.history.replaceState({}, "", url.toString());
+  }
 
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
