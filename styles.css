@@ -272,6 +272,11 @@ p { margin: 0; }
   margin-right: -24%;
   filter: drop-shadow(0 30px 60px rgba(0,0,0,0.14)) drop-shadow(0 10px 20px rgba(0,0,0,0.06));
 }
+.lang-es .hero-image {
+  width: 156%;
+  max-width: 1120px;
+  margin-right: -27%;
+}
 .blob {
   position: absolute;
   border-radius: 50%;
