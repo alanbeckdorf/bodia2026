@@ -173,7 +173,7 @@
       emailPlaceholder: "tu@email.com",
       emailLabel: "Correo",
       heroEyebrow: "Tu cuerpo · Tu progreso",
-      heroTitle: 'Entrena sencillo y mantente <br /><span class="h1-line"><span class="grad">motivado cada día</span></span>',
+      heroTitle: '<span class="h1-line">Entrena sencillo y mantente</span> <br /><span class="h1-line"><span class="grad">motivado cada día</span></span>',
       heroSub: "Planes simples y personalizados según tu objetivo, nivel y cuerpo. Desliza máquinas con swipe, descansa con propósito y escanea tu cuerpo con IA.",
       heroStat1Title: "+2.3% músculo",
       heroStat1Sub: "vs. tu último escaneo",

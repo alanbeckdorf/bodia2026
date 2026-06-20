@@ -1,4 +1,4 @@
-﻿/* ============ RESET + BASE ============ */
+/* ============ RESET + BASE ============ */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
@@ -52,6 +52,7 @@ p { margin: 0; }
   margin-bottom: 24px;
 }
 .h1-line { white-space: nowrap; display: inline-block; }
+html[lang="es"] .hero-copy .h1 { font-size: clamp(26px, 3.3vw, 44px); }
 .h2 {
   font-size: clamp(32px, 4.5vw, 56px);
   font-weight: 800;
@@ -1064,6 +1065,7 @@ p { margin: 0; }
   .legal-modal-panel { border-radius: 22px; }
   .legal-modal-close { top: 12px; right: 12px; width: 42px; height: 42px; }
   .h1 { font-size: 32px; }
+  html[lang="es"] .hero-copy .h1 { font-size: 28px; }
   .h1 .grad { white-space: nowrap; }
   .float-card { font-size: 12px; padding: 10px 12px; }
   .faq-item summary { font-size: 18px; }
